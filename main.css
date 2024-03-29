@@ -29,7 +29,7 @@ body {
     border-bottom: 4px solid #000;  
     background-color: rgb(107, 107, 107);
     font-family: "ABeeZee", sans-serif;
-    z-index: 100;
+    z-index: 10000;
 
 }
 
@@ -162,6 +162,7 @@ body {
     width: 340px;
     height: 400px;
     background-color: #000;
+    color: white;
     margin-left: 10px;
     margin-right: 20px;
     margin-top: 10px;
@@ -503,6 +504,10 @@ body {
 
 
 @media (max-width: 430px) and (max-height: 739px) {
+    body {
+        overflow-x: hidden;
+        position: relative;
+    }
     #info {
   
         height: 1200px;
