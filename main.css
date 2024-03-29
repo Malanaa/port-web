@@ -305,12 +305,13 @@ body {
     border-radius: 50%;
     border: 5px solid #000;
     z-index: 4;
-  }
-    #syedimg:hover {
+    margin-top: 10px;
+}
+#syedimg:hover {
         border: 5px solid #000000;
         scale: 1.1;
         transition: 0.3s ease-in;
-    }
+}
     
 
 
@@ -452,7 +453,54 @@ body {
 
 }
 
+#imgcont {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: transparent;
+    width: 100vw;
+    height: 200px;
+    z-index: 200;
 }
+#syedimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    z-index: 4;
+    margin-top: 10px;
+
+    transition: transform 0.3s ease;
+    
+}
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #363636;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+
 
 @media (max-width: 430px) and (max-height: 739px) {
     #info {
@@ -514,6 +562,13 @@ body {
     align-items: space-evenly;
     margin-top: 50px;
     margin-bottom: 50px;
+
+}
+
+#syedimg{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
 
 }
 
